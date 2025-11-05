@@ -5,8 +5,8 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "CFG SQL Query Tool",
-  description: "Natural language queries for your fitness data",
+  title: "CFG Natural Language Query",
+  description: "This allows you to use english language queries to ask about my fitness data! Collected from my garmin the past 3 years",
 }
 
 export default function RootLayout({
