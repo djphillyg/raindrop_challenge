@@ -9,20 +9,18 @@ RUN apt-get update && apt-get install -y \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements and install to a specific directory
+# Copy requirements and install globally
 COPY requirements.txt .
-RUN pip install --user --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Stage 2: Runtime
 FROM python:3.9-slim
 
 WORKDIR /app
 
-# Copy Python dependencies from builder
-COPY --from=builder /root/.local /root/.local
-
-# Update PATH to include user site-packages
-ENV PATH=/root/.local/bin:$PATH
+# Copy Python dependencies from builder (installed globally)
+COPY --from=builder /usr/local/lib/python3.9/site-packages /usr/local/lib/python3.9/site-packages
+COPY --from=builder /usr/local/bin /usr/local/bin
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
