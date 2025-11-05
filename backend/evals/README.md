@@ -43,19 +43,19 @@ pip install -r requirements.txt
 
 ```bash
 cd backend/evals
-python run_evals.py
+python3 run_evals.py
 ```
 
 ### Custom API URL
 
 ```bash
-python run_evals.py --api-url http://localhost:5000
+python3 run_evals.py --api-url http://localhost:5000
 ```
 
 ### Custom Output File
 
 ```bash
-python run_evals.py --output my_results.json
+python3 run_evals.py --output my_results.json
 ```
 
 ## Output

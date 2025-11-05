@@ -20,7 +20,7 @@ class OpenAIClient:
     
     def call_with_tool(self, input, tool):
         result = self.client.responses.create(
-            model="gpt-5",
+            model="gpt-5-mini",
             input=input,
             text={"format": {"type": "text"}},
             tools=[tool],
@@ -28,5 +28,5 @@ class OpenAIClient:
             timeout=60,
             reasoning={"effort": "medium"}
         )
-        # print(result)
-        return result.output[1].input
+
+        return result.output[1].input # type: ignore
