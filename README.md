@@ -33,7 +33,8 @@ As a narcisstic person however.... how should I make this coding challenge... ab
 1.5 hour - structure and initialization of clients in backend
 3 hours - grammar + examples + issues w using OpenAI
 1 hour - vibecoded frontend with password gate
-1.5 hour - evals and verifying the sql output
+1 hour - evals and verifying the sql output
+0.5 hour - railway deploy
 
 This project was allotted 6.5 hours, and I spent a majority of my time on the tiniest issues
 
@@ -42,6 +43,8 @@ The setup of the OpenAI grammar was the toughest part of this. I've only been bu
 When I was blindly throwing my "lark-verified" parser at chatgpt5, it would just spin out and not say anything, it used 1.3M tokens in the matter of 15 minutes, all returning me no data and just spinning out. 
 
 After figuring that out, the calls turned out not to be that expensive, and I wasn't blowing through so much money lol
+
+I also went through the hassle figuring out a cohesive docker-compose to find that railway actually just lets you reach in and deploy
 
 ### If i had more time
 - I would have made the output prettier
