@@ -30,11 +30,11 @@ As a narcisstic person however.... how should I make this coding challenge... ab
 - **Dockerized**: Easy deployment with Docker Compose
 
 ## Timing
-1.5 hour - structure and initialization of clients in backend
-3 hours - grammar + examples + issues w using OpenAI
-1 hour - vibecoded frontend with password gate
-1 hour - evals and verifying the sql output
-0.5 hour - railway deploy
+- 1.5 hour - structure and initialization of clients in backend
+- 3 hours - grammar + examples + issues w using OpenAI
+- 1 hour - vibecoded frontend with password gate
+- 1 hour - evals and verifying the sql output
+- 0.5 hour - railway deploy
 
 This project was allotted 6.5 hours, and I spent a majority of my time on the tiniest issues
 
@@ -50,6 +50,7 @@ I also went through the hassle figuring out a cohesive docker-compose to find th
 - I would have made the output prettier
 - i would have wanted to learn a bit more about eval procedures  and learn how to make one, like where you have it test against another LLM, but in the time frame i chose to intentionally vibecode
 - i would have implemented JWT token on backend, because i didn't understand that railway needed it to be public as well to run the app. if any of you reading this wanna drain my tokens... good luck girl! ill fix this after if i choose to leave it up
+- i would have spent more time validating against improper queries, i put in "hey girl hey" and the cfg just conformed it to a simple sql query of the first 10 rows haha
 ## Tech Stack
 
 ### Backend
