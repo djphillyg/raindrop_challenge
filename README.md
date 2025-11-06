@@ -49,7 +49,7 @@ I also went through the hassle figuring out a cohesive docker-compose to find th
 ### If i had more time
 - I would have made the output prettier
 - i would have wanted to learn a bit more about eval procedures  and learn how to make one, like where you have it test against another LLM, but in the time frame i chose to intentionally vibecode
-
+- i would have implemented JWT token on backend, because i didn't understand that railway needed it to be public as well to run the app. if any of you reading this wanna drain my tokens... good luck girl! ill fix this after if i choose to leave it up
 ## Tech Stack
 
 ### Backend
